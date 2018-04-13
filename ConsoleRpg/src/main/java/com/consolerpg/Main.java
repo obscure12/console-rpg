@@ -15,13 +15,11 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Hero hero = new Hero();
-		hero.name = "ミナト";
+		Hero hero = new Hero("ミナト", "男");
 		hero.attack();
 		hero.run();
 
-		GhostFungus ghostFungus = new GhostFungus();
-		ghostFungus.name = "お化けキノコ";
+		GhostFungus ghostFungus = new GhostFungus("お化けキノコ");
 		ghostFungus.attack();
 		ghostFungus.gushPoisonGas();
 	}
