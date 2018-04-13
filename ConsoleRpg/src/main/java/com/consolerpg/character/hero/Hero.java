@@ -20,6 +20,13 @@ public class Hero {
 	public String gender;
 
 	/**
+	 * 話す
+	 */
+	public void talk() {
+		System.out.println(this.name + "です");
+	}
+
+	/**
 	 * 攻撃する
 	 */
 	public void attack() {
