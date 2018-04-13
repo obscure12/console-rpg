@@ -28,6 +28,13 @@ public class GhostFungus {
 	}
 
 	/**
+	 * 話す
+	 */
+	public void talk() {
+		System.out.println("ノコノコノコノコ");
+	}
+
+	/**
 	 * 攻撃する
 	 */
 	public void attack() {
