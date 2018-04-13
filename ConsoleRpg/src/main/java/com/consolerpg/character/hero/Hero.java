@@ -36,7 +36,7 @@ public class Hero {
 	 * 話す
 	 */
 	public void talk() {
-		System.out.println(this.name + "です");
+		System.out.println(this.getName() + "です");
 	}
 
 	/**
