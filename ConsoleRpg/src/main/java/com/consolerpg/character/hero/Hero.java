@@ -1,5 +1,7 @@
 package com.consolerpg.character.hero;
 
+import com.consolerpg.character.monster.GhostFungus;
+
 /**
  * 勇者クラス
  * @author obscure12
@@ -41,9 +43,12 @@ public class Hero {
 
 	/**
 	 * 攻撃する
+	 * @param ghostFungus お化けキノコ
 	 */
-	public void attack() {
-		System.out.println(this.getName() + "は攻撃した");
+	public void attack(GhostFungus ghostFungus) {
+		System.out.println(this.getName() + "は" + ghostFungus.getName() + "を攻撃した");
+		System.out.println("10のダメージを与えた");
+		ghostFungus.setHp(ghostFungus.getHp() - 10);
 	}
 
 	/**
