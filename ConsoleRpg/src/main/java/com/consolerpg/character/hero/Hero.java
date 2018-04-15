@@ -7,7 +7,7 @@ import com.consolerpg.character.monster.GhostFungus;
  * @author obscure12
  *
  */
-public class Hero {
+public class Hero extends Character{
 
 	/** 名前 */
 	private String name;
@@ -37,6 +37,7 @@ public class Hero {
 	/**
 	 * 話す
 	 */
+	@Override
 	public void talk() {
 		System.out.println(this.getName() + "です");
 	}
@@ -76,6 +77,7 @@ public class Hero {
 	 * 名前を取得する
 	 * @return 名前
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -84,6 +86,7 @@ public class Hero {
 	 * HPを取得する
 	 * @return HP
 	 */
+	@Override
 	public int getHp() {
 		return hp;
 	}
@@ -100,6 +103,7 @@ public class Hero {
 	 * レベルを取得する
 	 * @return レベル
 	 */
+	@Override
 	public int getLevel() {
 		return level;
 	}

@@ -5,7 +5,7 @@ package com.consolerpg.character.monster;
  * @author obscure12
  *
  */
-public class GhostFungus {
+public class GhostFungus extends Monster{
 
 	/** 名前 */
 	private String name;
@@ -30,6 +30,7 @@ public class GhostFungus {
 	/**
 	 * 話す
 	 */
+	@Override
 	public void talk() {
 		System.out.println("ノコノコノコノコ");
 	}
@@ -59,6 +60,7 @@ public class GhostFungus {
 	 * 名前を取得する
 	 * @return 名前
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -67,6 +69,7 @@ public class GhostFungus {
 	 * HPを取得する
 	 * @return HP
 	 */
+	@Override
 	public int getHp() {
 		return hp;
 	}
@@ -83,6 +86,7 @@ public class GhostFungus {
 	 * レベルを取得する
 	 * @return レベル
 	 */
+	@Override
 	public int getLevel() {
 		return level;
 	}
